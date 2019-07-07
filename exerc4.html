@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Guilherme</title>
+    <style>
+       body {
+          background:red;
+          color:black;
+
+       }
+       #exibe {
+        text-align:center;
+        margin-top:50%;
+
+       }
+    </style>
+  </head>
+  <body>
+
+  </body>
+<script type="text/javascript">
+  function sleep(n) {
+    var start = new Date().getTime();
+    for (var i = 0; i < 1e7; i++) {
+      if ((new Date().getTime() - start) > n ){
+        break;
+      }
+    }
+    }
+
+
+
+
+
+   var nome = window.prompt("qual seu nome")
+
+
+  document.write(`<br><p>O seu nome é <strong>${nome}</strong></p></br>`)
+  document.write(`<p>O seu nome tem ${nome.length} letras</p>`)
+    document.write(`<br><p>O seu nome em minusculas é <strong>${nome.toLowerCase()}</strong></p></br>`)
+    document.write(`<br><p>O seu nome em maiusculas é <strong>${nome.toUpperCase()}</strong></p></br>`)
+
+sleep(4000);
+
+window.alert('Agora vamos jogar um jogo')
+window.alert('Tente adivinhar o numero,ele tem apenas um digito e é impar')
+var palpite = parseInt(window.prompt('qual seu palpite'))
+if ( palpite === 5 ) {
+  document.write('<h1 id="exibir">Parabens,vc acertou,o numero realmente é 5</h1>')
+} else {
+   window.alert('errou,tente novamente')
+   window.location.href = "file:///L:/Material%20Educacional(TECNOLOGIA%20DA%20INFORMAÇÃO)/AtividadesJS/6(JS)/exerc4.html"
+}
+</script>
+
+</html>
